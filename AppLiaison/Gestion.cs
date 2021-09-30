@@ -14,11 +14,12 @@ namespace AppLiaison
     {
         List<Liaison> ll;
         public static Liaison SetL;
+        public static int Cas;
         public Gestion()
         {
             InitializeComponent();
             ll = new List<Liaison>();
-            readFile();
+            lecture();
             refresh();
         }
         public void refresh()
@@ -27,7 +28,11 @@ namespace AppLiaison
             lb.DataSource = ll;
             lb.DisplayMember = "Description";
         }
-        public void readFile()
+        public void lecture()
+        {
+
+        }
+        public static void suppression(Liaison liaison)
         {
 
         }
@@ -45,19 +50,25 @@ namespace AppLiaison
 
         private void ajouterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            btn.Enabled = true;
+            btn.Text = "Ajout";
+            Cas = 1;
         }
 
         private void modifierToolStripMenuItem_Click(object sender, EventArgs e)
         {
             btn.Enabled = true;
             btn.Text = "Modifier";
+            SetL = (Liaison)lb.SelectedItem;
+            Cas = 2;
         }
 
         private void suprimerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             btn.Enabled = true;
             btn.Text = "Supprimer";
+            SetL = (Liaison)lb.SelectedItem;
+
         }
     }
 }

@@ -64,8 +64,8 @@ namespace AppLiaison
             this.modifierToolStripMenuItem,
             this.suprimerToolStripMenuItem});
             this.modificationsToolStripMenuItem.Name = "modificationsToolStripMenuItem";
-            this.modificationsToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.modificationsToolStripMenuItem.Text = "Modifications";
+            this.modificationsToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.modificationsToolStripMenuItem.Text = "Operations";
             // 
             // ajouterToolStripMenuItem
             // 
