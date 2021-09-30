@@ -1,0 +1,12 @@
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.csproj.AssemblyReference.cache
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.Operation.resources
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.Gestion.resources
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.Properties.Resources.resources
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.Verif.resources
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.csproj.GenerateResource.cache
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.csproj.CoreCompileInputs.cache
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\bin\Debug\AppLiaison.exe.config
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\bin\Debug\AppLiaison.exe
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\bin\Debug\AppLiaison.pdb
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.exe
+C:\wamp64\www\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.pdb
