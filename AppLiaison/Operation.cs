@@ -22,7 +22,15 @@ namespace AppLiaison
             else if (Gestion.Cas == 2)
             {
                 this.Text = "Modification";
+                tb1.Text = Gestion.SetL.Depart;
+                tb2.Text = Gestion.SetL.Arrive;
+                tb3.Text = Gestion.SetL.Heure;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

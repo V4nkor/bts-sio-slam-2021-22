@@ -32,9 +32,9 @@ namespace AppLiaison
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb1 = new System.Windows.Forms.TextBox();
+            this.tb2 = new System.Windows.Forms.TextBox();
+            this.tb3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -65,26 +65,26 @@ namespace AppLiaison
             this.label3.TabIndex = 0;
             this.label3.Text = "Heure";
             // 
-            // textBox1
+            // tb1
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.tb1.Location = new System.Drawing.Point(84, 28);
+            this.tb1.Name = "tb1";
+            this.tb1.Size = new System.Drawing.Size(100, 20);
+            this.tb1.TabIndex = 1;
             // 
-            // textBox2
+            // tb2
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.tb2.Location = new System.Drawing.Point(84, 69);
+            this.tb2.Name = "tb2";
+            this.tb2.Size = new System.Drawing.Size(100, 20);
+            this.tb2.TabIndex = 1;
             // 
-            // textBox3
+            // tb3
             // 
-            this.textBox3.Location = new System.Drawing.Point(84, 109);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 1;
+            this.tb3.Location = new System.Drawing.Point(84, 109);
+            this.tb3.Name = "tb3";
+            this.tb3.Size = new System.Drawing.Size(100, 20);
+            this.tb3.TabIndex = 1;
             // 
             // button1
             // 
@@ -94,6 +94,7 @@ namespace AppLiaison
             this.button1.TabIndex = 2;
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Operation
             // 
@@ -101,9 +102,9 @@ namespace AppLiaison
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(218, 216);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb3);
+            this.Controls.Add(this.tb2);
+            this.Controls.Add(this.tb1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -119,9 +120,9 @@ namespace AppLiaison
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb1;
+        private System.Windows.Forms.TextBox tb2;
+        private System.Windows.Forms.TextBox tb3;
         private System.Windows.Forms.Button button1;
     }
 }

@@ -32,6 +32,10 @@ namespace AppLiaison
         {
 
         }
+        public void modification()
+        {
+
+        }
         public static void suppression(Liaison liaison)
         {
 
@@ -68,7 +72,10 @@ namespace AppLiaison
             btn.Enabled = true;
             btn.Text = "Supprimer";
             SetL = (Liaison)lb.SelectedItem;
-
+            Verif verif = new Verif();
+            verif.ShowDialog();
+            lecture();
+            refresh();
         }
     }
 }
