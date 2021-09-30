@@ -14,10 +14,12 @@ namespace AppLiaison
     {
         List<Liaison> ll;
         public static Liaison SetL;
-        LinkedList = new List<Liaison>();
         public AppLiaison()
         {
             InitializeComponent();
+            ll = new List<Liaison>();
+            readFile();
+            refresh();
         }
         public void refresh()
         {
@@ -25,13 +27,17 @@ namespace AppLiaison
             lb.DataSource = ll;
             lb.DisplayMember = "Description";
         }
+        public void readFile()
+        {
+
+        }
         private void btn_Click(object sender, EventArgs e)
         {
             if(btn.Text == "Modifier")
             {
                 Liaison l = (Liaison)lb.SelectedItem;
             }
-            else
+            else if(btn.Text == "Supprimer")
             {
                 Liaison l = (Liaison)lb.SelectedItem;
             }
@@ -51,7 +57,7 @@ namespace AppLiaison
         private void suprimerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             btn.Enabled = true;
-            btn.Text = "Suprimer";
+            btn.Text = "Supprimer";
         }
     }
 }
