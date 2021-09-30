@@ -26,5 +26,8 @@ namespace AppLiaison
 			get{return "Départ: "+ depart + " , Arrivée: "+ arrivee + " Heure " + heure;}
 		}
 
+        public string Depart { get => depart; set => depart = value; }
+        public string Arrivee { get => arrivee; set => arrivee = value; }
+        public string Heure { get => heure; set => heure = value; }
     }
 }
