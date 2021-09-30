@@ -29,47 +29,85 @@ namespace AppLiaison
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lb = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
+            this.modificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lb
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 27);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(362, 277);
-            this.listBox1.TabIndex = 0;
+            this.lb.FormattingEnabled = true;
+            this.lb.Location = new System.Drawing.Point(12, 27);
+            this.lb.Name = "lb";
+            this.lb.Size = new System.Drawing.Size(362, 277);
+            this.lb.TabIndex = 0;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modificationsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(386, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // button1
+            // btn
             // 
-            this.button1.Location = new System.Drawing.Point(118, 324);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 52);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn.Enabled = false;
+            this.btn.Location = new System.Drawing.Point(118, 324);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(159, 52);
+            this.btn.TabIndex = 2;
+            this.btn.Text = "Valider";
+            this.btn.UseVisualStyleBackColor = true;
+            // 
+            // modificationsToolStripMenuItem
+            // 
+            this.modificationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ajouterToolStripMenuItem,
+            this.modifierToolStripMenuItem,
+            this.suprimerToolStripMenuItem});
+            this.modificationsToolStripMenuItem.Name = "modificationsToolStripMenuItem";
+            this.modificationsToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.modificationsToolStripMenuItem.Text = "Modifications";
+            // 
+            // ajouterToolStripMenuItem
+            // 
+            this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajouterToolStripMenuItem.Text = "Ajouter";
+            // 
+            // modifierToolStripMenuItem
+            // 
+            this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modifierToolStripMenuItem.Text = "Modifier";
+            // 
+            // suprimerToolStripMenuItem
+            // 
+            this.suprimerToolStripMenuItem.Name = "suprimerToolStripMenuItem";
+            this.suprimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.suprimerToolStripMenuItem.Text = "Suprimer";
             // 
             // AppLiaison
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 396);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btn);
+            this.Controls.Add(this.lb);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AppLiaison";
             this.Text = "Gestion liaisons";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,9 +115,13 @@ namespace AppLiaison
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lb;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.ToolStripMenuItem modificationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem suprimerToolStripMenuItem;
     }
 }
 
