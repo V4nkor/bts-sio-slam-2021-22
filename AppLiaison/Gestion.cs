@@ -20,6 +20,8 @@ namespace AppLiaison
             InitializeComponent();
             ll = new List<Liaison>();
             lecture();
+            Liaison test = new Liaison("test", "test", "10h30");
+            ll.Add(test);
             refresh();
         }
         public void refresh()
@@ -32,7 +34,7 @@ namespace AppLiaison
         {
 
         }
-        public void modification()
+        public static void modification(Liaison laison)
         {
 
         }
@@ -40,16 +42,31 @@ namespace AppLiaison
         {
 
         }
+        public static void ajout(Liaison liaison)
+        {
+
+        }
         private void btn_Click(object sender, EventArgs e)
         {
             if(btn.Text == "Modifier")
             {
-                Liaison l = (Liaison)lb.SelectedItem;
+                SetL = (Liaison)lb.SelectedItem;
+                Operation operation = new Operation();
+                operation.ShowDialog();
             }
             else if(btn.Text == "Supprimer")
             {
-                Liaison l = (Liaison)lb.SelectedItem;
+                SetL = (Liaison)lb.SelectedItem;
+                Verif verif = new Verif();
+                verif.ShowDialog();
             }
+            else if(btn.Text == "Ajout")
+            {
+                Operation operation = new Operation();
+                operation.ShowDialog();
+            }
+            lecture();
+            refresh();
         }
 
         private void ajouterToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,7 +80,6 @@ namespace AppLiaison
         {
             btn.Enabled = true;
             btn.Text = "Modifier";
-            SetL = (Liaison)lb.SelectedItem;
             Cas = 2;
         }
 
@@ -71,11 +87,6 @@ namespace AppLiaison
         {
             btn.Enabled = true;
             btn.Text = "Supprimer";
-            SetL = (Liaison)lb.SelectedItem;
-            Verif verif = new Verif();
-            verif.ShowDialog();
-            lecture();
-            refresh();
         }
     }
 }

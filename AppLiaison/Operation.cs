@@ -23,14 +23,24 @@ namespace AppLiaison
             {
                 this.Text = "Modification";
                 tb1.Text = Gestion.SetL.Depart;
-                tb2.Text = Gestion.SetL.Arrive;
+                tb2.Text = Gestion.SetL.Arrivee;
                 tb3.Text = Gestion.SetL.Heure;
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if(Gestion.Cas == 1)
+            {
+                Liaison nouvLiaison = new Liaison(tb1.Text, tb2.Text, tb3.Text);
+                Gestion.ajout(nouvLiaison);
+                Close();
+            }
+            else if (Gestion.Cas == 2)
+            {
+                Gestion.modification(Gestion.SetL);
+                Close();
+            }
         }
     }
 }
