@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace AppLiaison
 {
-    class Liaison
+    public class Liaison
     {
+        private string depart
+        private string arrivee
+        private string heure
+
+        /// 
+
+        /// 
+
+        /// Description
+        public string Description
+		{
+			get{return "Départ: "+ depart + " , Arrivée: "+ arrivee + " Heure " + heure;}
+		}
+
     }
 }
