@@ -31,11 +31,11 @@ namespace AppLiaison
         {
             this.lb = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btn = new System.Windows.Forms.Button();
             this.modificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,16 +57,6 @@ namespace AppLiaison
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // btn
-            // 
-            this.btn.Enabled = false;
-            this.btn.Location = new System.Drawing.Point(118, 324);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(159, 52);
-            this.btn.TabIndex = 2;
-            this.btn.Text = "Valider";
-            this.btn.UseVisualStyleBackColor = true;
-            // 
             // modificationsToolStripMenuItem
             // 
             this.modificationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -82,18 +72,32 @@ namespace AppLiaison
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
             this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
+            this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
             this.modifierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modifierToolStripMenuItem.Text = "Modifier";
+            this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierToolStripMenuItem_Click);
             // 
             // suprimerToolStripMenuItem
             // 
             this.suprimerToolStripMenuItem.Name = "suprimerToolStripMenuItem";
             this.suprimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.suprimerToolStripMenuItem.Text = "Suprimer";
+            this.suprimerToolStripMenuItem.Click += new System.EventHandler(this.suprimerToolStripMenuItem_Click);
+            // 
+            // btn
+            // 
+            this.btn.Enabled = false;
+            this.btn.Location = new System.Drawing.Point(118, 324);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(159, 52);
+            this.btn.TabIndex = 2;
+            this.btn.Text = "Valider";
+            this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // AppLiaison
             // 
