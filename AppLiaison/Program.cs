@@ -16,7 +16,7 @@ namespace AppLiaison
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AppLiaison());
+            Application.Run(new Gestion());
         }
     }
 }

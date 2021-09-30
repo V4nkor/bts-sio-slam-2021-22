@@ -1,7 +1,7 @@
 ﻿
 namespace AppLiaison
 {
-    partial class AppLiaison
+    partial class Gestion
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -99,7 +99,7 @@ namespace AppLiaison
             this.btn.UseVisualStyleBackColor = true;
             this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
-            // AppLiaison
+            // Gestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,7 +108,7 @@ namespace AppLiaison
             this.Controls.Add(this.lb);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "AppLiaison";
+            this.Name = "Gestion";
             this.Text = "Gestion liaisons";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

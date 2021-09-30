@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace AppLiaison
 {
-    public partial class AppLiaison : Form
+    public partial class Gestion : Form
     {
         List<Liaison> ll;
         public static Liaison SetL;
-        public AppLiaison()
+        public Gestion()
         {
             InitializeComponent();
             ll = new List<Liaison>();
