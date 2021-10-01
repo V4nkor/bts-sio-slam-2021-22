@@ -47,7 +47,11 @@ namespace AppLiaison
         }
         public static void modification(Liaison liaison)
         {
-            
+            string fileName = "liaisons.txt";
+            string str = File.ReadAllText("test.txt");
+            str = str.Replace("some text", "some other text");
+            File.WriteAllText(fileName, str);
+
         }
         public static void suppression(Liaison liaison)
         {

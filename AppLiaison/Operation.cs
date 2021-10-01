@@ -38,6 +38,10 @@ namespace AppLiaison
             }
             else if (Gestion.Cas == 2)
             {
+                Gestion.SetL.Depart = tb1.Text;
+                Gestion.SetL.Arrivee = tb2.Text;
+                Gestion.SetL.Heure = tb3.Text;
+
                 Gestion.modification(Gestion.SetL);
                 Close();
             }
