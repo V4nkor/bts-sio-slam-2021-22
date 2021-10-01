@@ -20,9 +20,8 @@ namespace AppLiaison
         {
             InitializeComponent();
             ll = new List<Liaison>();
-            Liaison test = new Liaison("jj", "dd", "10h");
-            ll.Add(test);
-            lecture();
+            Liaison test = new Liaison("Jésus", "Oui", "10h");
+            ll = lecture(ll);
             refresh();
         }
         public void refresh()
@@ -31,33 +30,31 @@ namespace AppLiaison
             lb.DataSource = ll;
             lb.DisplayMember = "Description";
         }
-        public void lecture()
+        public List<Liaison> lecture(List<Liaison> ll)
         {
-            TextReader reader;
             string fileName = "liaisons.txt";
-            reader = new StreamReader(fileName, System.Text.Encoding.Default);
+            List<string> lines = new List<string>();
+            lines = File.ReadAllLines(fileName).ToList();
 
-            string line = reader.ReadLine();
-
-            while (line != null)
+            foreach(string ligne in lines)
             {
-                
-                line = reader.ReadLine();
-                //Liaison test = new Liaison(line[0], line[1], line[2]);
-                //ll.Add(test);
-
+                string[] mots = ligne.Split(';');
+                Liaison liais = new Liaison(mots[0], mots[1], mots[2]);
+                ll.Add(liais);
             }
 
-
-            reader.Close();
+            return ll;
         }
         public static void modification(Liaison liaison)
         {
-            string line = liaison.Depart + " - " + liaison.Arrivee + " " + liaison.Heure;
+            
         }
         public static void suppression(Liaison liaison)
         {
-
+            string fileName = "liaisons.txt";
+            string suppr_liaison = liaison.Depart + ";" + liaison.Arrivee + ";" + liaison.Heure;
+            var lines = File.ReadAllLines(fileName).Where(line => line.Trim() != suppr_liaison).ToArray();
+            File.WriteAllLines(fileName, lines);
         }
         public static void ajout(Liaison liaison)
         {
@@ -65,7 +62,7 @@ namespace AppLiaison
             List<string> lines = new List<string>();
             lines = File.ReadAllLines(fileName).ToList();
 
-            string ajout_liaison = liaison.Depart + " - " + liaison.Arrivee + " " + liaison.Heure;
+            string ajout_liaison = liaison.Depart + ";" + liaison.Arrivee + ";" + liaison.Heure;
             lines.Add(ajout_liaison);
             File.WriteAllLines(fileName, lines);
         }
@@ -88,7 +85,8 @@ namespace AppLiaison
                 Operation operation = new Operation();
                 operation.ShowDialog();
             }
-            lecture();
+            ll.Clear();
+            lecture(ll);
             refresh();
         }
 

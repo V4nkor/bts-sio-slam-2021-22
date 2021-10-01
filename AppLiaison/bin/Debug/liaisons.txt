@@ -1,6 +1,4 @@
-Palerme - Ustica 1h30
-Palerme - Lipari 4h
-Messine - Stromboli 1h25
-Messine - Vulcano 1h45
-Trapani - Pantelleria 2h30
-Brasco - Junior10h
+Palerme;Ustica;1h30
+Palerme;Lipari;4h
+Messine;Stromboli;1h25
+Messine;Vulcano;1h45
