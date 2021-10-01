@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,9 @@ namespace AppLiaison
         {
             InitializeComponent();
             ll = new List<Liaison>();
-            lecture();
-            Liaison test = new Liaison("test", "test", "10h30");
+            Liaison test = new Liaison("jj", "dd", "10h");
             ll.Add(test);
+            lecture();
             refresh();
         }
         public void refresh()
@@ -32,11 +33,27 @@ namespace AppLiaison
         }
         public void lecture()
         {
+            TextReader reader;
+            string fileName = "liaisons.txt";
+            reader = new StreamReader(fileName, System.Text.Encoding.Default);
 
+            string line = reader.ReadLine();
+
+            while (line != null)
+            {
+                
+                line = reader.ReadLine();
+                //Liaison test = new Liaison(line[0], line[1], line[2]);
+                //ll.Add(test);
+
+            }
+
+
+            reader.Close();
         }
-        public static void modification(Liaison laison)
+        public static void modification(Liaison liaison)
         {
-
+            string line = liaison.Depart + " - " + liaison.Arrivee + " " + liaison.Heure;
         }
         public static void suppression(Liaison liaison)
         {
@@ -44,7 +61,13 @@ namespace AppLiaison
         }
         public static void ajout(Liaison liaison)
         {
+            string fileName = "liaisons.txt";
+            List<string> lines = new List<string>();
+            lines = File.ReadAllLines(fileName).ToList();
 
+            string ajout_liaison = liaison.Depart + " - " + liaison.Arrivee + " " + liaison.Heure;
+            lines.Add(ajout_liaison);
+            File.WriteAllLines(fileName, lines);
         }
         private void btn_Click(object sender, EventArgs e)
         {
