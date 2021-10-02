@@ -44,6 +44,8 @@ namespace AppLiaison
 
                 Gestion.modification(Gestion.SetL);
                 Close();
+                tb2.Text = Gestion.SetL.Arrivee;
+                tb3.Text = Gestion.SetL.Heure;
             }
         }
     }

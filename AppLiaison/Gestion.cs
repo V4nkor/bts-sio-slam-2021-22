@@ -35,7 +35,7 @@ namespace AppLiaison
             string fileName = "liaisons.txt";
             List<string> lines = new List<string>();
             lines = File.ReadAllLines(fileName).ToList();
-
+            
             foreach(string ligne in lines)
             {
                 string[] mots = ligne.Split(';');
@@ -112,6 +112,11 @@ namespace AppLiaison
         {
             btn.Enabled = true;
             btn.Text = "Supprimer";
+            SetL = (Liaison)lb.SelectedItem;
+            Verif verif = new Verif();
+            verif.ShowDialog();
+            ll = lecture(ll);
+            refresh();
         }
     }
 }
