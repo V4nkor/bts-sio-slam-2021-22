@@ -38,14 +38,9 @@ namespace AppLiaison
             }
             else if (Gestion.Cas == 2)
             {
-                Gestion.SetL.Depart = tb1.Text;
-                Gestion.SetL.Arrivee = tb2.Text;
-                Gestion.SetL.Heure = tb3.Text;
-
-                Gestion.modification(Gestion.SetL);
+                Liaison nouvLiaison = new Liaison(tb1.Text, tb2.Text, tb3.Text);
+                Gestion.modification(Gestion.SetL, nouvLiaison);
                 Close();
-                tb2.Text = Gestion.SetL.Arrivee;
-                tb3.Text = Gestion.SetL.Heure;
             }
         }
     }

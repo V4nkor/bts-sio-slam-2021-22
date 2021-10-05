@@ -45,20 +45,28 @@ namespace AppLiaison
 
             return ll;
         }
-        public static void modification(Liaison liaison)
-        {
-            string fileName = "liaisons.txt";
-            string str = File.ReadAllText("test.txt");
-            str = str.Replace("some text", "some other text");
-            File.WriteAllText(fileName, str);
-
-        }
         public static void suppression(Liaison liaison)
         {
             string fileName = "liaisons.txt";
             string suppr_liaison = liaison.Depart + ";" + liaison.Arrivee + ";" + liaison.Heure;
             var lines = File.ReadAllLines(fileName).Where(line => line.Trim() != suppr_liaison).ToArray();
             File.WriteAllLines(fileName, lines);
+
+        }
+        public static void modification(Liaison ancienneLiaison, Liaison nouvelleLiaison)
+        {
+            string fileName = "liaisons.txt";
+            string suppr_liaison = ancienneLiaison.Depart + ";" + ancienneLiaison.Arrivee + ";" + ancienneLiaison.Heure;
+            var lines = File.ReadAllLines(fileName).Where(line => line.Trim() != suppr_liaison).ToArray();
+            File.WriteAllLines(fileName, lines);
+
+            List<string> newLines = new List<string>();
+            newLines = File.ReadAllLines(fileName).ToList();
+
+            string modif_liaison = nouvelleLiaison.Depart + ";" + nouvelleLiaison.Arrivee + ";" + nouvelleLiaison.Heure;
+            newLines.Add(modif_liaison);
+            File.WriteAllLines(fileName, newLines);
+
         }
         public static void ajout(Liaison liaison)
         {
@@ -115,6 +123,7 @@ namespace AppLiaison
             SetL = (Liaison)lb.SelectedItem;
             Verif verif = new Verif();
             verif.ShowDialog();
+            ll.Clear();
             ll = lecture(ll);
             refresh();
         }
