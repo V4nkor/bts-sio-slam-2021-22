@@ -41,25 +41,25 @@ namespace AppLiaison
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 31);
+            this.label1.Location = new System.Drawing.Point(43, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Depart";
+            this.label1.Text = "Départ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 72);
+            this.label2.Location = new System.Drawing.Point(43, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Arrivee";
+            this.label2.Text = "Arrivée";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 112);
+            this.label3.Location = new System.Drawing.Point(43, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 0;
@@ -67,28 +67,28 @@ namespace AppLiaison
             // 
             // tb1
             // 
-            this.tb1.Location = new System.Drawing.Point(84, 28);
+            this.tb1.Location = new System.Drawing.Point(101, 26);
             this.tb1.Name = "tb1";
             this.tb1.Size = new System.Drawing.Size(100, 20);
             this.tb1.TabIndex = 1;
             // 
             // tb2
             // 
-            this.tb2.Location = new System.Drawing.Point(84, 69);
+            this.tb2.Location = new System.Drawing.Point(101, 67);
             this.tb2.Name = "tb2";
             this.tb2.Size = new System.Drawing.Size(100, 20);
             this.tb2.TabIndex = 1;
             // 
             // tb3
             // 
-            this.tb3.Location = new System.Drawing.Point(84, 109);
+            this.tb3.Location = new System.Drawing.Point(101, 107);
             this.tb3.Name = "tb3";
             this.tb3.Size = new System.Drawing.Size(100, 20);
             this.tb3.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(59, 155);
+            this.button1.Location = new System.Drawing.Point(77, 155);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 39);
             this.button1.TabIndex = 2;
@@ -100,7 +100,7 @@ namespace AppLiaison
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(218, 216);
+            this.ClientSize = new System.Drawing.Size(261, 216);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tb3);
             this.Controls.Add(this.tb2);

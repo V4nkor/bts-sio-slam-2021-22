@@ -22,3 +22,15 @@ C:\Users\Jiovani Viano\Documents\GitHub\bts-sio-slam-2021-22\AppLiaison\obj\Debu
 C:\Users\Jiovani Viano\Documents\GitHub\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.csproj.CoreCompileInputs.cache
 C:\Users\Jiovani Viano\Documents\GitHub\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.exe
 C:\Users\Jiovani Viano\Documents\GitHub\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.pdb
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\bin\Debug\AppLiaison.exe.config
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\bin\Debug\AppLiaison.exe
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\bin\Debug\AppLiaison.pdb
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.csproj.AssemblyReference.cache
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.Operation.resources
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.Gestion.resources
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.Properties.Resources.resources
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.Verif.resources
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.csproj.GenerateResource.cache
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.csproj.CoreCompileInputs.cache
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.exe
+C:\Users\eleve_sorre\Documents\bts-sio-slam-2021-22\AppLiaison\obj\Debug\AppLiaison.pdb

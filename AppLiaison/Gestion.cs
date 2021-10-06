@@ -20,7 +20,6 @@ namespace AppLiaison
         {
             InitializeComponent();
             ll = new List<Liaison>();
-            Liaison test = new Liaison("Jésus", "Oui", "10h");
             ll = lecture(ll);
             refresh();
         }

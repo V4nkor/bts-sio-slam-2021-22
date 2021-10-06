@@ -23,7 +23,7 @@ namespace AppLiaison
 
         /// Description
         public string Description {
-			get{return "Départ: "+ this.depart + " , Arrivée: "+ this.arrivee + " Heure " + this.heure;}
+			get{return "Départ: "+ this.depart + " , Arrivée: "+ this.arrivee + " - Heure " + this.heure;}
 		}
 
         public string Depart { get => depart; set => depart = value; }
