@@ -44,6 +44,9 @@ namespace AppLiaison
             // 
             // lb
             // 
+            this.lb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lb.FormattingEnabled = true;
             this.lb.Location = new System.Drawing.Point(39, 60);
             this.lb.Name = "lb";
@@ -93,10 +96,11 @@ namespace AppLiaison
             // 
             // btn
             // 
+            this.btn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn.Enabled = false;
-            this.btn.Location = new System.Drawing.Point(146, 366);
+            this.btn.Location = new System.Drawing.Point(0, 394);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(159, 52);
+            this.btn.Size = new System.Drawing.Size(468, 52);
             this.btn.TabIndex = 2;
             this.btn.Text = "Valider";
             this.btn.UseVisualStyleBackColor = true;
@@ -104,6 +108,9 @@ namespace AppLiaison
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -121,8 +128,8 @@ namespace AppLiaison
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(484, 485);
-            this.MinimumSize = new System.Drawing.Size(484, 485);
+            this.MaximumSize = new System.Drawing.Size(847, 597);
+            this.MinimumSize = new System.Drawing.Size(300, 300);
             this.Name = "Gestion";
             this.Text = "Gestion liaisons";
             this.menuStrip1.ResumeLayout(false);

@@ -36,6 +36,7 @@ namespace AppLiaison
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.Location = new System.Drawing.Point(141, 54);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 46);
@@ -46,6 +47,7 @@ namespace AppLiaison
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button2.Location = new System.Drawing.Point(22, 54);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 46);
@@ -56,6 +58,7 @@ namespace AppLiaison
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(39, 23);
             this.label1.Name = "label1";

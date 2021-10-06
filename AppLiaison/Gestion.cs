@@ -90,6 +90,9 @@ namespace AppLiaison
                 SetL = (Liaison)lb.SelectedItem;
                 Verif verif = new Verif();
                 verif.ShowDialog();
+                ll.Clear();
+                ll = lecture(ll);
+                refresh();
             }
             else if(btn.Text == "Ajout")
             {
@@ -119,12 +122,6 @@ namespace AppLiaison
         {
             btn.Enabled = true;
             btn.Text = "Supprimer";
-            SetL = (Liaison)lb.SelectedItem;
-            Verif verif = new Verif();
-            verif.ShowDialog();
-            ll.Clear();
-            ll = lecture(ll);
-            refresh();
         }
     }
 }
