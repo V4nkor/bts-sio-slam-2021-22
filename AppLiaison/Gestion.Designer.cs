@@ -121,6 +121,8 @@ namespace AppLiaison
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(484, 485);
+            this.MinimumSize = new System.Drawing.Size(484, 485);
             this.Name = "Gestion";
             this.Text = "Gestion liaisons";
             this.menuStrip1.ResumeLayout(false);
