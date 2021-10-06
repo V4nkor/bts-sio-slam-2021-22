@@ -38,8 +38,10 @@ namespace AppLiaison
             this.suprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lb
@@ -48,9 +50,9 @@ namespace AppLiaison
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lb.FormattingEnabled = true;
-            this.lb.Location = new System.Drawing.Point(39, 60);
+            this.lb.Location = new System.Drawing.Point(38, 134);
             this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(388, 277);
+            this.lb.Size = new System.Drawing.Size(388, 251);
             this.lb.TabIndex = 0;
             // 
             // menuStrip1
@@ -118,11 +120,23 @@ namespace AppLiaison
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(96, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(275, 101);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
             // Gestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(468, 446);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.lb);
             this.Controls.Add(this.menuStrip1);
@@ -135,6 +149,7 @@ namespace AppLiaison
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +165,7 @@ namespace AppLiaison
         private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem suprimerToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
