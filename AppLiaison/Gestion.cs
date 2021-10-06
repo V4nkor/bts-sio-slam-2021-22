@@ -53,20 +53,15 @@ namespace AppLiaison
             File.WriteAllLines(fileName, lines);
 
         }
-        public static void modification(Liaison ancienneLiaison, Liaison nouvelleLiaison)
+        public static void modification(List<Liaison> ll)
         {
             //tout changer utiliser liste existante pour reecrire le fichier en entier
             string fileName = "liaisons.txt";
-            string suppr_liaison = ancienneLiaison.Depart + ";" + ancienneLiaison.Arrivee + ";" + ancienneLiaison.Heure;
-            var lines = File.ReadAllLines(fileName).Where(line => line.Trim() != suppr_liaison).ToArray();
-            File.WriteAllLines(fileName, lines);
-
-            List<string> newLines = new List<string>();
-            newLines = File.ReadAllLines(fileName).ToList();
-
-            string modif_liaison = nouvelleLiaison.Depart + ";" + nouvelleLiaison.Arrivee + ";" + nouvelleLiaison.Heure;
-            newLines.Add(modif_liaison);
-            File.WriteAllLines(fileName, newLines);
+            
+            foreach(Liaison l in ll) {
+                string ligne = l.Depart + ";" + l.Arrivee + ";" + l.Heure;
+                File.WriteAllLines(fileName, ligne);
+            }
 
         }
         public static void ajout(Liaison liaison)

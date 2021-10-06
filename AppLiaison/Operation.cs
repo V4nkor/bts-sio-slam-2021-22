@@ -38,8 +38,10 @@ namespace AppLiaison
             }
             else if (Gestion.Cas == 2)
             {
-                Liaison nouvLiaison = new Liaison(tb1.Text, tb2.Text, tb3.Text);
-                Gestion.modification(Gestion.SetL, nouvLiaison);
+                tb1.Text = Gestion.SetL.Depart;
+                tb2.Text = Gestion.SetL.Arrivee;
+                tb3.Text = Gestion.SetL.Heure;
+                Gestion.modification(Gestion.ll);
                 Close();
             }
         }
