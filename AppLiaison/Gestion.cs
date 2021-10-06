@@ -55,6 +55,7 @@ namespace AppLiaison
         }
         public static void modification(Liaison ancienneLiaison, Liaison nouvelleLiaison)
         {
+            //tout changer utiliser liste existante pour reecrire le fichier en entier
             string fileName = "liaisons.txt";
             string suppr_liaison = ancienneLiaison.Depart + ";" + ancienneLiaison.Arrivee + ";" + ancienneLiaison.Heure;
             var lines = File.ReadAllLines(fileName).Where(line => line.Trim() != suppr_liaison).ToArray();
@@ -127,7 +128,15 @@ namespace AppLiaison
 
         private void ouvrirFichierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Process.Start(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"bin/Debug/liaisons.txt"));
+            try
+            {
+                //AppDomain.CurrentDomain.BaseDirectory amene dans le fichier debug de base
+                Process.Start(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "liaisons.txt"));
+            }
+            catch(Exception x)
+            {
+                MessageBox.Show(x.Message);
+            }
         }
     }
 }
