@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace AppLiaison
 {
@@ -122,6 +123,11 @@ namespace AppLiaison
         {
             btn.Enabled = true;
             btn.Text = "Supprimer";
+        }
+
+        private void ouvrirFichierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("C:/wamp64/www/bts-sio-slam-2021-22/AppLiaison/bin/Debug/liaisons.txt");
         }
     }
 }

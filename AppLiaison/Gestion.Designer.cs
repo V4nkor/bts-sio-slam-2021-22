@@ -39,6 +39,7 @@ namespace AppLiaison
             this.btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ouvrirFichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -58,7 +59,8 @@ namespace AppLiaison
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.modificationsToolStripMenuItem});
+            this.modificationsToolStripMenuItem,
+            this.ouvrirFichierToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(468, 24);
@@ -78,21 +80,21 @@ namespace AppLiaison
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modifierToolStripMenuItem.Text = "Modifier";
             this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierToolStripMenuItem_Click);
             // 
             // suprimerToolStripMenuItem
             // 
             this.suprimerToolStripMenuItem.Name = "suprimerToolStripMenuItem";
-            this.suprimerToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.suprimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.suprimerToolStripMenuItem.Text = "Suprimer";
             this.suprimerToolStripMenuItem.Click += new System.EventHandler(this.suprimerToolStripMenuItem_Click);
             // 
@@ -103,7 +105,7 @@ namespace AppLiaison
             this.btn.Location = new System.Drawing.Point(0, 394);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(468, 52);
-            this.btn.TabIndex = 2;
+            this.btn.TabIndex = 1;
             this.btn.Text = "Valider";
             this.btn.UseVisualStyleBackColor = true;
             this.btn.Click += new System.EventHandler(this.btn_Click);
@@ -130,6 +132,13 @@ namespace AppLiaison
             this.pictureBox2.Size = new System.Drawing.Size(275, 101);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            // 
+            // ouvrirFichierToolStripMenuItem
+            // 
+            this.ouvrirFichierToolStripMenuItem.Name = "ouvrirFichierToolStripMenuItem";
+            this.ouvrirFichierToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.ouvrirFichierToolStripMenuItem.Text = "Ouvrir fichier";
+            this.ouvrirFichierToolStripMenuItem.Click += new System.EventHandler(this.ouvrirFichierToolStripMenuItem_Click);
             // 
             // Gestion
             // 
@@ -166,6 +175,7 @@ namespace AppLiaison
         private System.Windows.Forms.ToolStripMenuItem suprimerToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ToolStripMenuItem ouvrirFichierToolStripMenuItem;
     }
 }
 
