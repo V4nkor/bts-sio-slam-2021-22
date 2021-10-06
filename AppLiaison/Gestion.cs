@@ -127,7 +127,7 @@ namespace AppLiaison
 
         private void ouvrirFichierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("C:/wamp64/www/bts-sio-slam-2021-22/AppLiaison/bin/Debug/liaisons.txt");
+            //Process.Start(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"bin/Debug/liaisons.txt"));
         }
     }
 }

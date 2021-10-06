@@ -95,7 +95,7 @@ namespace AppLiaison
             // 
             this.suprimerToolStripMenuItem.Name = "suprimerToolStripMenuItem";
             this.suprimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.suprimerToolStripMenuItem.Text = "Suprimer";
+            this.suprimerToolStripMenuItem.Text = "Supprimer";
             this.suprimerToolStripMenuItem.Click += new System.EventHandler(this.suprimerToolStripMenuItem_Click);
             // 
             // btn
