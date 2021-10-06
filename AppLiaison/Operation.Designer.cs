@@ -77,21 +77,21 @@ namespace AppLiaison
             this.tb2.Location = new System.Drawing.Point(101, 67);
             this.tb2.Name = "tb2";
             this.tb2.Size = new System.Drawing.Size(100, 20);
-            this.tb2.TabIndex = 1;
+            this.tb2.TabIndex = 2;
             // 
             // tb3
             // 
             this.tb3.Location = new System.Drawing.Point(101, 107);
             this.tb3.Name = "tb3";
             this.tb3.Size = new System.Drawing.Size(100, 20);
-            this.tb3.TabIndex = 1;
+            this.tb3.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(77, 155);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 39);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
