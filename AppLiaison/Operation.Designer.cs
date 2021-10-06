@@ -52,9 +52,9 @@ namespace AppLiaison
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(26, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Arrive";
+            this.label2.Text = "Arrivee";
             // 
             // label3
             // 
