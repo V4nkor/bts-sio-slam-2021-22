@@ -36,7 +36,7 @@ namespace AppLiaison
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(21, 54);
+            this.button1.Location = new System.Drawing.Point(141, 54);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 46);
             this.button1.TabIndex = 0;
@@ -46,7 +46,7 @@ namespace AppLiaison
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(143, 54);
+            this.button2.Location = new System.Drawing.Point(22, 54);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 46);
             this.button2.TabIndex = 1;
