@@ -1,0 +1,9 @@
+C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\SicilyLines-App.csproj.AssemblyReference.cache
+C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.Operation.resources
+C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.Gestion.resources
+C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.Properties.Resources.resources
+C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.Verif.resources
+C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\SicilyLines-App.csproj.GenerateResource.cache
+C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\SicilyLines-App.csproj.CoreCompileInputs.cache
+C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.exe
+C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.pdb
