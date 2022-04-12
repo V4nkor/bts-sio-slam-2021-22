@@ -10,7 +10,7 @@ namespace Sicily.Controleur
     class Mgr
     {
 
-        CompteDao cd = new CompteDao();
+        LiaisonDao cd = new LiaisonDao();
         ClientDao cld = new ClientDao();
 
     
