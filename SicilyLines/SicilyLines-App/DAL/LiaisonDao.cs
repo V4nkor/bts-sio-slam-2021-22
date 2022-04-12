@@ -9,7 +9,7 @@ using MySql.Data.MySqlClient;
 
 namespace Sicily.DAL
 {
-    class CompteDao
+    class LiaisonDao
     {
 
 
@@ -28,10 +28,10 @@ namespace Sicily.DAL
 
 
 
-        public List<Compte> getComptes()
+        public List<Liaison> getLiaisons()
         {
 
-            List<Compte> lc = new List<Compte>();
+            List<Liaison> ll = new List<Liaison>();
 
             try
             {
@@ -45,32 +45,25 @@ namespace Sicily.DAL
 
 
 
-                Ocom = maConnexionSql.reqExec("Select * from compte");
+                Ocom = maConnexionSql.reqExec("Select * from liaison");
 
                 MySqlDataReader reader = Ocom.ExecuteReader();
-
-                cld = new ClientDao();
 
 
                 while (reader.Read())
                 {
 
-                    int numCompte = (int)reader.GetValue(0);
-                    int solde = (int)reader.GetValue(1);
-                    int decouvert = (int)reader.GetValue(2);
-                    int numClient = (int)reader.GetValue(3);
+                    int numLiaison = (int)reader.GetValue(0);
+                    int depart = (int)reader.GetValue(3);
+                    int arrive = (int)reader.GetValue(4);
+                    int heure = (int)reader.GetValue(2);
 
 
 
-                    cl = cld.getClient(numClient);
+                    l = new Liaison(numLiaison, depart, arrive, heure);
 
 
-                    Compte c = new Compte(numCompte, cl);
-                    c.crediter(solde);
-                    c.DecouvertAutorisé = decouvert;
-
-
-                    lc.Add(c);
+                    ll.Add(l);
 
 
 
@@ -81,7 +74,7 @@ namespace Sicily.DAL
                 maConnexionSql.closeConnection();
 
 
-                return (lc);
+                return (ll);
 
             }
 
@@ -91,7 +84,7 @@ namespace Sicily.DAL
                 MessageBox.Show(emp.Message);
 
             }
-            return (lc);
+            return (ll);
         }
 
 
