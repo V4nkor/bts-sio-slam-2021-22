@@ -7,3 +7,6 @@ C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\SicilyL
 C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\SicilyLines-App.csproj.CoreCompileInputs.cache
 C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.exe
 C:\wamp64\www\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.pdb
+C:\Users\etudiant\Documents\GitHub\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\SicilyLines-App.csprojAssemblyReference.cache
+C:\Users\etudiant\Documents\GitHub\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.exe
+C:\Users\etudiant\Documents\GitHub\bts-sio-slam-2021-22\SicilyLines\SicilyLines-App\obj\Debug\AppLiaison.pdb
