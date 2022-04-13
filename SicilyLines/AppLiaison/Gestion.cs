@@ -59,8 +59,10 @@ namespace AppLiaison
             string fileName = "liaisons.txt";
             
             foreach(Liaison l in ll) {
+                List<string> lesLignes = new List<string>();
                 string ligne = l.Depart + ";" + l.Arrivee + ";" + l.Heure;
-                File.WriteAllLines(fileName, ligne);
+                lesLignes.Add(ligne);
+                File.WriteAllLines(fileName, lesLignes);
             }
 
         }
